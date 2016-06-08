@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <% include ./templates/head.ejs %>
+  <body>
+    <% include ./templates/header.ejs %>
+    <div class="container content">
+      <div class="row">
+        <% include ./templates/sidebar.ejs %>
+        <div class="col-md-9">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>項目</th>
+                <th>内容</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>ID</th>
+                <td>0</td>
+              </tr>
+              <tr>
+                <th>キャラクタ名</th>
+                <td>たろう</td>
+              </tr>
+              <tr>
+                <th>サムネイル</th>
+                <td><input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"></td>
+              </tr>
+              <tr>
+                <th>キャラクタ情報</th>
+                <td><input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
