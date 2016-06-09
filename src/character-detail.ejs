@@ -25,16 +25,46 @@
               </tr>
               <tr>
                 <th>サムネイル</th>
-                <td><input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"></td>
+                <td><img src="http://codeforfukui.github.io/meganehack/img/160316_banner.png"></td>
               </tr>
               <tr>
-                <th>キャラクタ情報</th>
-                <td><input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"></td>
+                <th>キャラクターが表示された回数</th>
+                <td>100 回</td>
               </tr>
             </tbody>
           </table>
+          <div id="map" style="height: 400px"></div>
         </div>
       </div>
     </div>
+    <script type="text/javascript">
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 33.5901528, lng: 130.3678963},
+          zoom:  14
+        });
+        var latLng = new google.maps.LatLng(33.5901528,130.36783);
+        var marker = new google.maps.Marker({
+          position: latLng,
+          label: '1'
+        });
+        var infoWindow = new google.maps.InfoWindow({
+          content: "2016.06.06 18:18"
+        });
+        google.maps.event.addListenerOnce(marker, "click", function(event) {
+          infoWindow.open(map, marker);
+          google.maps.event.addListener(infoWindow, "closeclick", function() {
+           google.maps.event.addListenerOnce(marker, "click", function(event) {
+             infoWindow.open(map, marker);
+           });
+         });
+        });
+        marker.setMap(map);
+      }
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2jwOz7ii2P1NsTdOtQX9d9zdwnsm9MdU&callback=initMap">
+    </script>
   </body>
 </html>
