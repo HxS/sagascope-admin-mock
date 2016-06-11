@@ -20,20 +20,41 @@
                 <td>0</td>
               </tr>
               <tr>
-                <th>キャラクタ名</th>
-                <td>たろう</td>
+                <th>リンク先</th>
+                <td><input type="text" class="form-control" id="exampleInputEmail1"></td>
               </tr>
               <tr>
-                <th>サムネイル</th>
-                <td><img src="http://codeforfukui.github.io/meganehack/img/160316_banner.png"></td>
+                <th>広告バナー</th>
+                <td>
+                  <img src="http://codeforfukui.github.io/meganehack/img/160316_banner.png"><br>
+                  <input type="file" id="exampleInputFile">
+                </td>
               </tr>
               <tr>
-                <th>キャラクターが表示された回数</th>
-                <td>100 回</td>
+                <th>有効 / 無効</th>
+                <td>
+                  <input type="checkbox"> 有効にする
+                </td>
               </tr>
             </tbody>
           </table>
           <div id="map" style="height: 400px"></div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>クリックされた日時</th>
+                <th>場所</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% for(var i=0; i<10; i++) { %>
+                <tr>
+                  <td>2016.6.6 18:18</td>
+                  <td><a onclick="addPin(33.590528,<%= 130.36783 + i * 0.001 %>)">地図で場所を確認</a></td>
+                </tr>
+              <% } %>
+            </tbody>
+          </table>
           <table class="table">
             <thead>
               <tr>
@@ -58,7 +79,7 @@
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 33.5901528, lng: 130.3678963},
-          zoom:  17
+          zoom:   17
         });
         for (var i = 0; i < 4; i++) {
           var latLng = new google.maps.LatLng(33.5901528,130.36783 + i * 0.001);
