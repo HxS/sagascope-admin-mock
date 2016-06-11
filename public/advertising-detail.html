@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="js/main.js"></script>
+  <title></title>
+</head>
+
+  <body>
+    <nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Saga scope Admin</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <p class="navbar-text navbar-right">
+        ○○社 xxさん
+        <a href="#" class="navbar-link">ログアウト</a>
+      </p>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    <div class="container content">
+      <div class="row">
+        <div class="col-md-3">
+  <div class="list-group">
+    <a href="staffs.html" class="list-group-item">スタッフ</a>
+    <a href="markers.html" class="list-group-item">マーカー一覧</a>
+    <a href="characters.html" class="list-group-item">キャラクター一覧</a>
+    <a href="advertisings.html" class="list-group-item">広告</a>
+  </div>
+</div>
+
+        <div class="col-md-9">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>項目</th>
+                <th>内容</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>ID</th>
+                <td>0</td>
+              </tr>
+              <tr>
+                <th>リンク先</th>
+                <td><input type="text" class="form-control"></td>
+              </tr>
+              <tr>
+                <th>広告バナー</th>
+                <td>
+                  <img src="http://codeforfukui.github.io/meganehack/img/160316_banner.png"><br>
+                  <input type="file">
+                </td>
+              </tr>
+              <tr>
+                <th>有効 / 無効</th>
+                <td>
+                  <input type="checkbox"> 有効にする
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <a href='' class="btn btn-default">更新</a>
+          <button type="button" class="btn btn-danger">削除</button>
+          <div id="map" style="height: 400px; margin-top: 50px;"></div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>クリックされた日時</th>
+                <th>場所</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>2016.6.6 18:18</td>
+                  <td><a onclick="addPin(33.590528,130.36783)">地図で場所を確認</a></td>
+                </tr>
+              
+                <tr>
+                  <td>2016.6.6 18:18</td>
+                  <td><a onclick="addPin(33.590528,130.36883)">地図で場所を確認</a></td>
+                </tr>
+              
+                <tr>
+                  <td>2016.6.6 18:18</td>
+                  <td><a onclick="addPin(33.590528,130.36983)">地図で場所を確認</a></td>
+                </tr>
+              
+                <tr>
+                  <td>2016.6.6 18:18</td>
+                  <td><a onclick="addPin(33.590528,130.37082999999998)">地図で場所を確認</a></td>
+                </tr>
+              
+                <tr>
+                  <td>2016.6.6 18:18</td>
+                  <td><a onclick="addPin(33.590528,130.37183)">地図で場所を確認</a></td>
+                </tr>
+              
+                <tr>
+                  <td>2016.6.6 18:18</td>
+                  <td><a onclick="addPin(33.590528,130.37283)">地図で場所を確認</a></td>
+                </tr>
+              
+                <tr>
+                  <td>2016.6.6 18:18</td>
+                  <td><a onclick="addPin(33.590528,130.37383)">地図で場所を確認</a></td>
+                </tr>
+              
+                <tr>
+                  <td>2016.6.6 18:18</td>
+                  <td><a onclick="addPin(33.590528,130.37483)">地図で場所を確認</a></td>
+                </tr>
+              
+                <tr>
+                  <td>2016.6.6 18:18</td>
+                  <td><a onclick="addPin(33.590528,130.37583)">地図で場所を確認</a></td>
+                </tr>
+              
+                <tr>
+                  <td>2016.6.6 18:18</td>
+                  <td><a onclick="addPin(33.590528,130.37682999999998)">地図で場所を確認</a></td>
+                </tr>
+              
+            </tbody>
+          </table>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>表示された日時</th>
+                <th>場所</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>2016.6.6 18:18</td>
+                  <td><a onclick="addPin(33.590528,130.36783)">地図で場所を確認</a></td>
+                </tr>
+              
+                <tr>
+                  <td>2016.6.6 18:18</td>
+                  <td><a onclick="addPin(33.590528,130.36883)">地図で場所を確認</a></td>
+                </tr>
+              
+                <tr>
+                  <td>2016.6.6 18:18</td>
+                  <td><a onclick="addPin(33.590528,130.36983)">地図で場所を確認</a></td>
+                </tr>
+              
+                <tr>
+                  <td>2016.6.6 18:18</td>
+                  <td><a onclick="addPin(33.590528,130.37082999999998)">地図で場所を確認</a></td>
+                </tr>
+              
+                <tr>
+                  <td>2016.6.6 18:18</td>
+                  <td><a onclick="addPin(33.590528,130.37183)">地図で場所を確認</a></td>
+                </tr>
+              
+                <tr>
+                  <td>2016.6.6 18:18</td>
+                  <td><a onclick="addPin(33.590528,130.37283)">地図で場所を確認</a></td>
+                </tr>
+              
+                <tr>
+                  <td>2016.6.6 18:18</td>
+                  <td><a onclick="addPin(33.590528,130.37383)">地図で場所を確認</a></td>
+                </tr>
+              
+                <tr>
+                  <td>2016.6.6 18:18</td>
+                  <td><a onclick="addPin(33.590528,130.37483)">地図で場所を確認</a></td>
+                </tr>
+              
+                <tr>
+                  <td>2016.6.6 18:18</td>
+                  <td><a onclick="addPin(33.590528,130.37583)">地図で場所を確認</a></td>
+                </tr>
+              
+                <tr>
+                  <td>2016.6.6 18:18</td>
+                  <td><a onclick="addPin(33.590528,130.37682999999998)">地図で場所を確認</a></td>
+                </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 33.5901528, lng: 130.3678963},
+          zoom:   17
+        });
+        for (var i = 0; i < 4; i++) {
+          var latLng = new google.maps.LatLng(33.5901528,130.36783 + i * 0.001);
+          var marker = new google.maps.Marker({
+            position: latLng,
+            label: i + 1 + '',
+            map: map
+          });
+          var cityCircle = new google.maps.Circle({
+            strokeColor: '#FF0000',
+            strokeOpacity: 0.0,
+            strokeWeight: 2,
+            fillColor: '#FF0000',
+            fillOpacity: 0.35,
+            center: latLng,
+            map: map,
+            radius: 10 * (i+1)
+          });
+          var infoWindow = new google.maps.InfoWindow({
+            content: "2016.06.06 18:18"
+          });
+          google.maps.event.addListener(marker, "click", function(event) {
+            infoWindow.open(map, marker);
+          });
+        }
+        addPin = function(latitude, longitude) {
+          var latLng = new google.maps.LatLng(latitude,longitude);
+          if (window.currentMarker !== undefined) {
+            window.currentMarker.setMap(null);
+          }
+          window.currentMarker = new google.maps.Marker({
+            position: latLng,
+            map: map,
+            color: 'green'
+          });
+          map.setCenter(latLng);
+        }
+      }
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2jwOz7ii2P1NsTdOtQX9d9zdwnsm9MdU&callback=initMap">
+    </script>
+  </body>
+</html>

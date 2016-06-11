@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="js/main.js"></script>
+  <title></title>
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="admin.html">Saga scope core Admin</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <p class="navbar-text navbar-right">
+        xxさん
+        <a href="#" class="navbar-link">ログアウト</a>
+      </p>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    <div class="container content">
+      <div class="row">
+        <div class="col-md-3">
+  <div class="list-group">
+    <a href="admin-administrators.html" class="list-group-item">管理者</a>
+    <a href="admin-companies.html" class="list-group-item">企業</a>
+    <a href="admin-staffs.html" class="list-group-item">スタッフ</a>
+    <a href="admin-markers.html" class="list-group-item">マーカー</a>
+    <a href="admin-characters.html" class="list-group-item">キャラクター</a>
+    <a href="admin-advertisings.html" class="list-group-item">広告</a>
+  </div>
+</div>
+
+        <div class="col-md-9">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>項目</th>
+                <th>内容</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>ID</th>
+                <td>0</td>
+              </tr>
+              <tr>
+                <th>名前</th>
+                <td><input type="text" class="form-control"></td>
+              </tr>
+              <tr>
+                <th>有効/無効</th>
+                <td>
+                  <input type="checkbox"> 有効にする
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <a href='' class="btn btn-default">更新</a>
+          <button type="button" class="btn btn-danger">削除</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
