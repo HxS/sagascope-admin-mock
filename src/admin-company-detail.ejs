@@ -2,10 +2,10 @@
 <html>
   <% include ./templates/head.ejs %>
   <body>
-    <% include ./templates/header.ejs %>
+    <% include ./templates/header-admin.ejs %>
     <div class="container content">
       <div class="row">
-        <% include ./templates/sidebar.ejs %>
+        <% include ./templates/sidebar-admin.ejs %>
         <div class="col-md-9">
           <table class="table">
             <thead>
@@ -21,15 +21,13 @@
               </tr>
               <tr>
                 <th>名前</th>
-                <td>山田 太郎</td>
+                <td><input type="text" class="form-control"></td>
               </tr>
               <tr>
-                <th>メールアドレス</th>
-                <td><input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"></td>
-              </tr>
-              <tr>
-                <th>パスワード</th>
-                <td><input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"></td>
+                <th>有効/無効</th>
+                <td>
+                  <input type="checkbox"> 有効にする
+                </td>
               </tr>
             </tbody>
           </table>
