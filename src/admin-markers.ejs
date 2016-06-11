@@ -2,18 +2,21 @@
 <html>
   <% include ./templates/head.ejs %>
   <body>
-    <% include ./templates/header.ejs %>
+    <% include ./templates/header-admin.ejs %>
     <div class="container content">
       <div class="row">
-        <% include ./templates/sidebar.ejs %>
+        <% include ./templates/sidebar-admin.ejs %>
         <div class="col-md-9">
+          <div class="container-fluid" align="right" style="margin-bottom: 20px;">
+            <a href="admin-staff-detail.html" class="btn btn-primary">新規追加</a>
+          </div>
           <table class="table">
             <thead>
               <tr>
                 <th>#</th>
-                <th>キャラクタ名</th>
-                <th>サムネイル</th>
-                <th>キャラクタ情報</th>
+                <th>企業名</th>
+                <th>有効 / 無効</th>
+                <th>画像</th>
                 <th></th>
               </tr>
             </thead>
@@ -21,11 +24,12 @@
               <% for(var i=0; i<10; i++) { %>
                 <tr>
                   <td><%= i %></td>
-                  <td>たろう</td>
+                  <td>○○社</td>
+                  <td>有効</td>
                   <td><img src="http://codeforfukui.github.io/meganehack/img/160316_banner.png"></td>
-                  <td>http://codeforfukui.github.io/meganehack/</td>
                   <td align='right'>
-                    <a href='character-detail.html' class="btn btn-default">詳細</a>
+                    <a href= 'admin-marker-detail.html' class="btn btn-default">編集</a>
+                    <button type="button" class="btn btn-danger">削除</button>
                   </td>
                 </tr>
               <% } %>

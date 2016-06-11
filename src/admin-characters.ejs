@@ -2,11 +2,14 @@
 <html>
   <% include ./templates/head.ejs %>
   <body>
-    <% include ./templates/header.ejs %>
+    <% include ./templates/header-admin.ejs %>
     <div class="container content">
       <div class="row">
-        <% include ./templates/sidebar.ejs %>
+        <% include ./templates/sidebar-admin.ejs %>
         <div class="col-md-9">
+          <div class="container-fluid" align="right" style="margin-bottom: 20px;">
+            <a href="admin-staff-detail.html" class="btn btn-primary">新規追加</a>
+          </div>
           <table class="table">
             <thead>
               <tr>
@@ -25,7 +28,7 @@
                   <td><img src="http://codeforfukui.github.io/meganehack/img/160316_banner.png"></td>
                   <td>http://codeforfukui.github.io/meganehack/</td>
                   <td align='right'>
-                    <a href='character-detail.html' class="btn btn-default">詳細</a>
+                    <a href='admin-character-detail.html' class="btn btn-default">編集</a>
                   </td>
                 </tr>
               <% } %>
