@@ -44,32 +44,68 @@
 
         <div class="col-md-9">
           <table class="table">
+          <div id="map" style="height: 400px; margin-top: 50px;"></div>
+          <table class="table">
             <thead>
               <tr>
-                <th>項目</th>
-                <th>内容</th>
+                <th>クリックされた日時</th>
+                <th>場所</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <th>ID</th>
-                <td>0</td>
-              </tr>
-              <tr>
-                <th>キャラクタ名</th>
-                <td>たろう</td>
-              </tr>
-              <tr>
-                <th>サムネイル</th>
-                <td><img src="http://codeforfukui.github.io/meganehack/img/160316_banner.png"></td>
-              </tr>
-              <tr>
-                <th>キャラクターが表示された回数</th>
-                <td>100 回</td>
-              </tr>
+              
+                <tr>
+                  <td>2016.6.6 18:18</td>
+                  <td><a onclick="addPin(33.590528,130.36783)">地図で場所を確認</a></td>
+                </tr>
+              
+                <tr>
+                  <td>2016.6.6 18:18</td>
+                  <td><a onclick="addPin(33.590528,130.36883)">地図で場所を確認</a></td>
+                </tr>
+              
+                <tr>
+                  <td>2016.6.6 18:18</td>
+                  <td><a onclick="addPin(33.590528,130.36983)">地図で場所を確認</a></td>
+                </tr>
+              
+                <tr>
+                  <td>2016.6.6 18:18</td>
+                  <td><a onclick="addPin(33.590528,130.37082999999998)">地図で場所を確認</a></td>
+                </tr>
+              
+                <tr>
+                  <td>2016.6.6 18:18</td>
+                  <td><a onclick="addPin(33.590528,130.37183)">地図で場所を確認</a></td>
+                </tr>
+              
+                <tr>
+                  <td>2016.6.6 18:18</td>
+                  <td><a onclick="addPin(33.590528,130.37283)">地図で場所を確認</a></td>
+                </tr>
+              
+                <tr>
+                  <td>2016.6.6 18:18</td>
+                  <td><a onclick="addPin(33.590528,130.37383)">地図で場所を確認</a></td>
+                </tr>
+              
+                <tr>
+                  <td>2016.6.6 18:18</td>
+                  <td><a onclick="addPin(33.590528,130.37483)">地図で場所を確認</a></td>
+                </tr>
+              
+                <tr>
+                  <td>2016.6.6 18:18</td>
+                  <td><a onclick="addPin(33.590528,130.37583)">地図で場所を確認</a></td>
+                </tr>
+              
+                <tr>
+                  <td>2016.6.6 18:18</td>
+                  <td><a onclick="addPin(33.590528,130.37682999999998)">地図で場所を確認</a></td>
+                </tr>
+              
             </tbody>
           </table>
-          <div id="map" style="height: 400px"></div>
           <table class="table">
             <thead>
               <tr>
@@ -139,7 +175,7 @@
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 33.5901528, lng: 130.3678963},
-          zoom:  17
+          zoom:   17
         });
         for (var i = 0; i < 4; i++) {
           var latLng = new google.maps.LatLng(33.5901528,130.36783 + i * 0.001);

@@ -16,19 +16,24 @@
                 <th>#</th>
                 <th>リンク先</th>
                 <th>広告バナー</th>
+                <th>リーチ数</th>
+                <th>インプレッション数</th>
                 <th>有効 / 無効</th>
                 <th></th>
               </tr>
             </thead>
-            <tbody>
+            <tbody class="advertisings">
               <% for(var i=0; i<10; i++) { %>
                 <tr>
                   <td><%= i %></td>
                   <td>http://codeforfukui.github.io/meganehack/</td>
                   <td><img src="http://codeforfukui.github.io/meganehack/img/160316_banner.png"></td>
+                  <td><%= i %></td>
+                  <td><%= i %></td>
                   <td>有効</td>
                   <td align='right'>
-                    <a href='advertising-detail.html' class="btn btn-default">編集</a>
+                    <a href='' class="btn btn-default">無効にする</a>
+                    <a href='advertising-detail.html' class="btn btn-primary">編集</a>
                   </td>
                 </tr>
               <% } %>

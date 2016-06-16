@@ -33,46 +33,14 @@
               <tr>
                 <th>有効 / 無効</th>
                 <td>
-                  <input type="checkbox"> 有効にする
+                  現在のステータス : 有効
+                  <a href='' class="btn btn-default">無効にする</a>
                 </td>
               </tr>
             </tbody>
           </table>
           <a href='' class="btn btn-default">更新</a>
           <button type="button" class="btn btn-danger">削除</button>
-          <div id="map" style="height: 400px; margin-top: 50px;"></div>
-          <table class="table">
-            <thead>
-              <tr>
-                <th>クリックされた日時</th>
-                <th>場所</th>
-              </tr>
-            </thead>
-            <tbody>
-              <% for(var i=0; i<10; i++) { %>
-                <tr>
-                  <td>2016.6.6 18:18</td>
-                  <td><a onclick="addPin(33.590528,<%= 130.36783 + i * 0.001 %>)">地図で場所を確認</a></td>
-                </tr>
-              <% } %>
-            </tbody>
-          </table>
-          <table class="table">
-            <thead>
-              <tr>
-                <th>表示された日時</th>
-                <th>場所</th>
-              </tr>
-            </thead>
-            <tbody>
-              <% for(var i=0; i<10; i++) { %>
-                <tr>
-                  <td>2016.6.6 18:18</td>
-                  <td><a onclick="addPin(33.590528,<%= 130.36783 + i * 0.001 %>)">地図で場所を確認</a></td>
-                </tr>
-              <% } %>
-            </tbody>
-          </table>
         </div>
       </div>
     </div>
