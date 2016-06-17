@@ -6,6 +6,7 @@
     <div class="container content">
       <div class="row">
         <% include ./templates/sidebar.ejs %>
+        <button type="button" class="btn btn-primary">新規追加</button>
         <div class="col-md-9">
           <table class="table table-hover">
             <thead>
@@ -24,7 +25,6 @@
                   <td>taro.yamada@hoge.com</td>
                   <td align='right'>
                     <a href='staff-detail.html' class="btn btn-default">編集</a>
-                    <button type="button" class="btn btn-danger">削除</button>
                   </td>
                 </tr>
               <% } %>
