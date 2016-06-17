@@ -7,33 +7,31 @@
       <div class="row">
         <% include ./templates/sidebar.ejs %>
         <div class="col-md-9">
+          <div class="jumbotron">
+            <h1>○○社 管理画面</h1>
+            <img src="http://codeforfukui.github.io/meganehack/img/160316_banner.png">
+            <p>キャラクター表示回数 : 100 / 全体広告インプレッション数 : 100</p>
+          </div>
           <div class="container-fluid" align="right" style="margin-bottom: 20px;">
-            <a href="advertising-detail.html" class="btn btn-primary">新規追加</a>
+            <a href="marker-advertising-detail.html" class="btn btn-primary">広告を新規追加</a>
           </div>
           <table class="table">
             <thead>
               <tr>
                 <th>#</th>
-                <th>リンク先</th>
                 <th>広告バナー</th>
-                <th>リーチ数</th>
-                <th>インプレッション数</th>
-                <th>有効 / 無効</th>
                 <th></th>
               </tr>
             </thead>
-            <tbody class="advertisings">
+            <tbody>
               <% for(var i=0; i<10; i++) { %>
                 <tr>
                   <td><%= i %></td>
-                  <td>http://codeforfukui.github.io/meganehack/</td>
-                  <td><img src="http://codeforfukui.github.io/meganehack/img/160316_banner.png"></td>
-                  <td><%= i %></td>
-                  <td><%= i %></td>
-                  <td>有効</td>
+                  <td>
+                    <img src="http://codeforfukui.github.io/meganehack/img/160316_banner.png">
+                  </td>
                   <td align='right'>
-                    <a href='' class="btn btn-default">無効にする</a>
-                    <a href='advertising-detail.html' class="btn btn-primary">編集</a>
+                    <a href='marker-advertising-data.html' class="btn btn-default">詳細・広告表示履歴</a>
                   </td>
                 </tr>
               <% } %>
