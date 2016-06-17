@@ -16,19 +16,14 @@
                 <th>#</th>
                 <th>名前</th>
                 <th>メールアドレス</th>
-                <th></th>
               </tr>
             </thead>
             <tbody>
               <% for(var i=0; i<10; i++) { %>
-                <tr>
+                <tr data-href="admin-administrator-detail.html">
                   <td><%= i %></td>
                   <td>山田 太郎</td>
                   <td>taro.yamada@hoge.com</td>
-                  <td align='right'>
-                    <a href='admin-administrator-detail.html' class="btn btn-default">編集</a>
-                    <button type="button" class="btn btn-danger">削除</button>
-                  </td>
                 </tr>
               <% } %>
             </tbody>
