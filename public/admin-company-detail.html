@@ -41,6 +41,7 @@
     <a href="admin-markers.html" class="list-group-item">マーカー</a>
     <a href="admin-characters.html" class="list-group-item">キャラクター</a>
     <a href="admin-advertisings.html" class="list-group-item">広告</a>
+    <a href="admin-apps.html" class="list-group-item">アプリ</a>
   </div>
 </div>
 
@@ -55,7 +56,7 @@
             <tbody>
               <tr>
                 <th>ID</th>
-                <td>0</td>
+                <td><input type="text" class="form-control" value="0"></td>
               </tr>
               <tr>
                 <th>名前</th>
@@ -64,7 +65,16 @@
               <tr>
                 <th>有効/無効</th>
                 <td>
-                  <input type="checkbox"> 有効にする
+                  現在の状態 : 有効
+                  <button type="button" class="btn btn-default">無効にする</a>
+                </td>
+              </tr>
+              <tr>
+                <th>アプリID</th>
+                <td>
+                  <input type="checkbox"> アプリ1<br>
+                  <input type="checkbox"> アプリ2<br>
+                  <input type="checkbox"> アプリ3
                 </td>
               </tr>
             </tbody>

@@ -12,11 +12,15 @@
             <img src="http://codeforfukui.github.io/meganehack/img/160316_banner.png">
             <p>キャラクター表示回数 : 100 / 全体広告インプレッション数 : 100</p>
           </div>
+          <div class="container-fluid" align="right" style="margin-bottom: 20px;">
+            <a href="marker-advertising-detail.html" class="btn btn-primary">広告を新規追加</a>
+          </div>
           <table class="table">
             <thead>
               <tr>
                 <th>#</th>
-                <th>マーカーサムネイル</th>
+                <th>広告バナー</th>
+                <th></th>
               </tr>
             </thead>
             <tbody>
@@ -24,9 +28,10 @@
                 <tr>
                   <td><%= i %></td>
                   <td>
-                    <a href="markers.html">
-                      <img src="http://codeforfukui.github.io/meganehack/img/160316_banner.png">
-                    </a>
+                    <img src="http://codeforfukui.github.io/meganehack/img/160316_banner.png">
+                  </td>
+                  <td align='right'>
+                    <a href='marker-advertising-data.html' class="btn btn-default">詳細・広告表示履歴</a>
                   </td>
                 </tr>
               <% } %>
